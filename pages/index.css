@@ -1,0 +1,137 @@
+@import url(../vendor/normalize.css);
+@import url(https://allfont.ru/allfont.css?fonts=josefin-sans);
+
+.page {
+  font-family: 'Josefin Sans', Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+}
+
+
+.header__navigation {
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px 20px;
+  font-size: 20px;
+}
+
+.header__navigation-main {
+  margin: 0;
+  padding: 0;
+  min-width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 625px) {
+  .header__navigation-main {
+    max-width: 200px;
+    flex-direction: column;
+  }
+}
+
+.header__navigation-item {
+  list-style: none;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 625px) {
+  .header__navigation-item {
+    padding-bottom: 20px;
+  }
+}
+
+.header__navigation-item:hover {
+  text-shadow: #1E90FF 2px 2px 5px;
+}
+
+.header__navigation-complain {
+  transition: 0.5s;
+}
+
+.header__navigation-complain:hover {
+  text-shadow: red 2px 2px 5px;
+}
+
+.link {
+  text-decoration: none;
+  color: #000;
+}
+
+.people {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.people__titles {
+  margin: 0;
+  padding: 40px 20px;
+}
+
+.people__title {
+  color: #fecda7;
+  margin: 0;
+}
+
+.people__subtitle {
+  font-size: 50px;
+  max-width: 700px;
+  font-weight: 700;
+}
+
+.people__cards {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.people__card {
+  box-sizing: border-box;
+  padding: 10px;
+  max-width: 250px;
+  transition: 0.5s;
+}
+
+.people__card:hover {
+  cursor: pointer;
+  border-radius: 15px;
+  box-shadow: #FFE4C4 5px 0 20px;
+}
+
+.people__card-author {
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.people__card-text {
+  margin: 0;
+}
+
+.footer {
+  margin: 0 auto;
+}
+
+.footer__background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  min-height: 400px;
+  background-color: #fecda7;
+}
+
+.footer__copyright {
+  margin: 0;
+  font-weight: bold;
+  font-size: 40px;
+}
