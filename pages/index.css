@@ -1,8 +1,7 @@
 @import url(../vendor/normalize.css);
-@import url(https://allfont.ru/allfont.css?fonts=josefin-sans);
 
 .page {
-  font-family: 'Josefin Sans', Arial, sans-serif;
+  font-family: 'Arial', Arial, sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
@@ -16,8 +15,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 40px 20px;
+  padding: 40px 20px 50px;
   font-size: 20px;
+}
+
+@media screen and (max-width: 630px) {
+  .header__navigation {
+    padding: 20px;
+  }  
 }
 
 .header__navigation-main {
@@ -29,9 +34,9 @@
   justify-content: space-between;
 }
 
-@media screen and (max-width: 625px) {
+@media screen and (max-width: 630px) {
   .header__navigation-main {
-    max-width: 200px;
+    min-width: 200px;
     flex-direction: column;
   }
 }
@@ -41,27 +46,113 @@
   transition: 0.5s;
 }
 
-@media screen and (max-width: 625px) {
+@media screen and (max-width: 630px) {
   .header__navigation-item {
     padding-bottom: 20px;
+  }
+
+  .header__navigation-item:last-child {
+    padding-bottom: 0;
   }
 }
 
 .header__navigation-item:hover {
-  text-shadow: #1E90FF 2px 2px 5px;
+  display: inline;
+  border-bottom: 3px solid #1E90FF;
 }
 
 .header__navigation-complain {
   transition: 0.5s;
 }
 
+@media screen and (max-width: 391px) {
+  .header__navigation-complain {
+    padding-top: 20px;
+  }
+}
+
 .header__navigation-complain:hover {
-  text-shadow: red 2px 2px 5px;
+  text-shadow: #FF0000 2px 2px 5px;
 }
 
 .link {
   text-decoration: none;
   color: #000;
+}
+
+.travel {
+  display: flex;
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 630px) {
+  .travel {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.travel__titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 20px;
+}
+
+@media screen and (max-width: 840px) {
+  .travel__titles {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .travel__titles {
+    padding-right: 0px;
+  }
+}
+
+.travel__title {
+  text-transform: uppercase;
+  color: #fecda7;
+  margin: 0;
+}
+
+.travel__subtitle {
+  margin: 50px 0 0;
+  font-size: 40px;
+  max-width: 700px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 840px) {
+  .travel__subtitle {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .travel__subtitle {
+    margin: 20px 0;
+  }
+}
+
+.travel__image {
+  object-fit: cover;
+  width: 50%;
+  max-width: 380px;
+  max-height: 380px;
+}
+
+@media screen and (max-width: 831px) {
+  .travel__image {
+    max-width: 300px;
+    max-height: 300px;
+  }
 }
 
 .people {
@@ -74,18 +165,40 @@
 
 .people__titles {
   margin: 0;
-  padding: 40px 20px;
+  padding: 40px 20px 0;
+}
+
+@media screen and (max-width: 806px) {
+  .people__titles {
+    text-align: center;
+    padding: 0;
+  }
 }
 
 .people__title {
   color: #fecda7;
-  margin: 0;
+  margin: 20px 0 0;
+  text-transform: uppercase;
 }
 
 .people__subtitle {
+  margin: 50px 0 0;
   font-size: 50px;
   max-width: 700px;
   font-weight: 700;
+}
+
+@media screen and (max-width: 830px) {
+  .people__subtitle {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .people__subtitle {
+    font-size: 32px;
+    margin-top: 20px;
+  }
 }
 
 .people__cards {
@@ -93,6 +206,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 80px 20px;
+}
+
+@media screen and (max-width: 1058px) {
+  .people__cards {
+    padding: 40px 20px;
+    justify-content: space-around;
+  }
 }
 
 .people__card {
@@ -100,6 +221,12 @@
   padding: 10px;
   max-width: 250px;
   transition: 0.5s;
+}
+
+@media screen and (max-width: 560px) {
+  .people__card {
+    max-width: 200px;
+  }
 }
 
 .people__card:hover {
@@ -126,12 +253,30 @@
   justify-content: center;
   align-items: center;
   max-width: 100%;
-  min-height: 400px;
+  height: 400px;
   background-color: #fecda7;
+}
+
+@media screen and (max-width: 984px) {
+  .footer__background {
+    max-height: 300px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .footer__background {
+    max-height: 200px;
+  }
 }
 
 .footer__copyright {
   margin: 0;
   font-weight: bold;
   font-size: 40px;
+}
+
+@media screen and (max-width: 630px) {
+  .footer__copyright {
+    font-size: 30px;
+  }
 }
