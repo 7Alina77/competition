@@ -27,5 +27,6 @@
 @import url(../blocks/galery/__item/galery__item.css);
 @import url(../blocks/galery/__img/galery__img.css);
 @import url(../blocks/galery/__title/galery__title.css);
+@import url(../blocks/galery/__text/galery__text.css);
 @import url(../blocks/move/move.css);
 @import url(../blocks/shows/shows.css);
