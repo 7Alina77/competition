@@ -1,0 +1,14 @@
+.people__cards {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 80px 20px;
+}
+
+@media screen and (max-width: 1058px) {
+  .people__cards {
+    padding: 40px 20px;
+    justify-content: space-around;
+  }
+}

@@ -1,0 +1,19 @@
+.people__subtitle {
+  margin: 50px 0 0;
+  font-size: 50px;
+  max-width: 700px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 830px) {
+  .people__subtitle {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .people__subtitle {
+    font-size: 32px;
+    margin-top: 20px;
+  }
+}

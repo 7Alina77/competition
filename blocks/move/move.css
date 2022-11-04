@@ -1,0 +1,19 @@
+@keyframes move {
+  0% {
+     transform: translate(5px,5px);
+     margin-left: 70%;
+  }
+  25% {
+     transform: translate(125px,25px)
+  }
+  50% {
+     transform: translate(50px,75px)
+  }
+  75% {
+     transform: translate(75px,50px)
+  }
+  100% {
+     transform: translate(100px,75px);
+     margin-left: 0%;
+  }
+}

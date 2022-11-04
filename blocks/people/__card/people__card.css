@@ -1,0 +1,18 @@
+.people__card {
+  box-sizing: border-box;
+  padding: 10px;
+  max-width: 250px;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 560px) {
+  .people__card {
+    max-width: 250px;
+  }
+}
+
+.people__card:hover {
+  cursor: pointer;
+  border-radius: 15px;
+  box-shadow: #7cb2d9 5px 0 20px;
+}

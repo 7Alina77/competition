@@ -1,0 +1,16 @@
+.header__navigation {
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px 20px 50px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 630px) {
+  .header__navigation {
+    padding: 20px;
+  }  
+}

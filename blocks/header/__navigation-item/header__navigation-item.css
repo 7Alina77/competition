@@ -1,0 +1,22 @@
+.header__navigation-item {
+  list-style: none;
+  transition: 0.5s;
+  padding-left: 3px;
+  padding-right: 3px;
+  border-radius: 10px;
+  align-self: flex-start;
+}
+
+@media screen and (max-width: 630px) {
+  .header__navigation-item {
+    margin-bottom: 20px;
+  }
+
+  .header__navigation-item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.header__navigation-item:hover {
+  box-shadow: inset 0 -30px 0 rgba(155, 193, 250,0.5), 0 2px 0 rgba(155, 193, 250,0.5);
+}

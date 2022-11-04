@@ -1,0 +1,18 @@
+.travel__titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 20px;
+}
+
+@media screen and (max-width: 840px) {
+  .travel__titles {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .travel__titles {
+    padding-right: 0px;
+  }
+}

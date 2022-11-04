@@ -1,287 +1,31 @@
 @import url(../vendor/normalize.css);
-
-.page {
-  font-family: 'Arial', Arial, sans-serif;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-}
-
-
-.header__navigation {
-  box-sizing: border-box;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 40px 20px 50px;
-  font-size: 20px;
-}
-
-@media screen and (max-width: 630px) {
-  .header__navigation {
-    padding: 20px;
-  }  
-}
-
-.header__navigation-main {
-  margin: 0;
-  padding: 0;
-  min-width: 400px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-@media screen and (max-width: 630px) {
-  .header__navigation-main {
-    min-width: 200px;
-    flex-direction: column;
-  }
-}
-
-.header__navigation-item {
-  list-style: none;
-  transition: 0.5s;
-  padding-left: 3px;
-  padding-right: 3px;
-  border-radius: 10px;
-}
-
-@media screen and (max-width: 630px) {
-  .header__navigation-item {
-    padding-bottom: 20px;
-  }
-
-  .header__navigation-item:last-child {
-    padding-bottom: 0;
-  }
-}
-
-.header__navigation-item:hover {
-  box-shadow: inset 0 -30px 0 rgba(155, 193, 250,0.5), 0 2px 0 rgba(155, 193, 250,0.5);
-}
-
-.header__navigation-complain {
-  transition: 0.5s;
-  padding-left: 3px;
-  padding-right: 3px;
-  border-radius: 10px;
-}
-
-@media screen and (max-width: 391px) {
-  .header__navigation-complain {
-    padding-top: 20px;
-  }
-}
-
-.header__navigation-complain:hover {
-  box-shadow: inset 0 -30px 0 rgba(255, 97, 107,0.5), 0 2px 0 rgba(255, 97, 107,0.5);
-}
-
-.link {
-  text-decoration: none;
-  color: #000;
-}
-
-.travel {
-  display: flex;
-  box-sizing: border-box;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  justify-content: space-between;
-}
-
-@media screen and (max-width: 630px) {
-  .travel {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-}
-
-.travel__titles {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-right: 20px;
-}
-
-@media screen and (max-width: 840px) {
-  .travel__titles {
-    max-width: 500px;
-  }
-}
-
-@media screen and (max-width: 630px) {
-  .travel__titles {
-    padding-right: 0px;
-  }
-}
-
-.travel__title {
-  text-transform: uppercase;
-  color: #fecda7;
-  margin: 0;
-}
-
-.travel__subtitle {
-  margin: 50px 0 0;
-  font-size: 40px;
-  max-width: 700px;
-  font-weight: 700;
-}
-
-@media screen and (max-width: 840px) {
-  .travel__subtitle {
-    font-size: 20px;
-  }
-}
-
-@media screen and (max-width: 630px) {
-  .travel__subtitle {
-    margin: 20px 0;
-  }
-}
-
-.travel__image {
-  object-fit: cover;
-  width: 50%;
-  max-width: 380px;
-  max-height: 380px;
-}
-
-@media screen and (max-width: 831px) {
-  .travel__image {
-    max-width: 300px;
-    max-height: 300px;
-  }
-}
-
-.people {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-}
-
-.people__titles {
-  margin: 0;
-  padding: 40px 20px 0;
-}
-
-@media screen and (max-width: 806px) {
-  .people__titles {
-    text-align: center;
-    padding: 0;
-  }
-}
-
-.people__title {
-  color: #fecda7;
-  margin: 20px 0 0;
-  text-transform: uppercase;
-}
-
-.people__subtitle {
-  margin: 50px 0 0;
-  font-size: 50px;
-  max-width: 700px;
-  font-weight: 700;
-}
-
-@media screen and (max-width: 830px) {
-  .people__subtitle {
-    font-size: 40px;
-  }
-}
-
-@media screen and (max-width: 630px) {
-  .people__subtitle {
-    font-size: 32px;
-    margin-top: 20px;
-  }
-}
-
-.people__cards {
-  box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 80px 20px;
-}
-
-@media screen and (max-width: 1058px) {
-  .people__cards {
-    padding: 40px 20px;
-    justify-content: space-around;
-  }
-}
-
-.people__card {
-  box-sizing: border-box;
-  padding: 10px;
-  max-width: 250px;
-  transition: 0.5s;
-}
-
-@media screen and (max-width: 560px) {
-  .people__card {
-    max-width: 200px;
-  }
-}
-
-.people__card:hover {
-  cursor: pointer;
-  border-radius: 15px;
-  box-shadow: #7cb2d9 5px 0 20px;
-}
-
-.people__card-author {
-  margin: 0;
-  padding-bottom: 20px;
-}
-
-.people__card-text {
-  margin: 0;
-}
-
-.footer {
-  margin: 0 auto;
-}
-
-.footer__background {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 100%;
-  height: 400px;
-  background-color: #fecda7;
-}
-
-@media screen and (max-width: 984px) {
-  .footer__background {
-    max-height: 300px;
-  }
-}
-
-@media screen and (max-width: 630px) {
-  .footer__background {
-    max-height: 200px;
-  }
-}
-
-.footer__copyright {
-  margin: 0;
-  font-weight: bold;
-  font-size: 40px;
-}
-
-@media screen and (max-width: 630px) {
-  .footer__copyright {
-    font-size: 30px;
-  }
-}
+@import url(../vendor/fonts/fonts.css);
+@import url(../blocks/link/link.css);
+@import url(../blocks/page/page.css);
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__navigation/header__navigation.css);
+@import url(../blocks/header/__navigation-main/header__navigation-main.css);
+@import url(../blocks/header/__navigation-item/header__navigation-item.css);
+@import url(../blocks/header/__navigation-complain/header__navigation-complain.css);
+@import url(../blocks/travel/travel.css);
+@import url(../blocks/travel/__titles/travel__titles.css);
+@import url(../blocks/travel/__title/travel__title.css);
+@import url(../blocks/travel/__subtitle/travel__subtitle.css);
+@import url(../blocks/travel/__image/travel__image.css);
+@import url(../blocks/people/people.css);
+@import url(../blocks/people/__titles/people__titles.css);
+@import url(../blocks/people/__title/people__title.css);
+@import url(../blocks/people/__subtitle/people__subtitle.css);
+@import url(../blocks/people/__cards/people__cards.css);
+@import url(../blocks/people/__card/people__card.css);
+@import url(../blocks/people/__card-author/people__card-author.css);
+@import url(../blocks/people/__card-text/people__card-text.css);
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__background/footer__background.css);
+@import url(../blocks/footer/__copyright/footer__copyright.css);
+@import url(../blocks/galery/galery.css);
+@import url(../blocks/galery/__item/galery__item.css);
+@import url(../blocks/galery/__img/galery__img.css);
+@import url(../blocks/galery/__title/galery__title.css);
+@import url(../blocks/move/move.css);
+@import url(../blocks/shows/shows.css);

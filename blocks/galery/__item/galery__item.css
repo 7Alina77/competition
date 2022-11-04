@@ -1,0 +1,15 @@
+.galery__item {
+  max-height: 80vh;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+}
+
+.galery__item:nth-of-type(2),
+.galery__item:nth-of-type(3),
+.galery__item:nth-of-type(6) {
+  padding: 10%;
+}

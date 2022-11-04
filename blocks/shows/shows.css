@@ -1,0 +1,8 @@
+@keyframes shows {
+  from {
+    margin-left: 100px;
+  }
+  to {
+    margin-left: 0%;
+  }
+}

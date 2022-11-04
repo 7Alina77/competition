@@ -1,0 +1,15 @@
+.header__navigation-main {
+  margin: 0;
+  padding: 0;
+  min-width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 630px) {
+  .header__navigation-main {
+    min-width: 150px;
+    flex-direction: column;
+  }
+}

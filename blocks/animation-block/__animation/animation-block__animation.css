@@ -1,0 +1,3 @@
+.animation-block__animation {
+  animation: move 2s linear 3s 1 forwards;
+}

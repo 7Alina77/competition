@@ -1,0 +1,11 @@
+.people__titles {
+  margin: 0;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 806px) {
+  .people__titles {
+    text-align: center;
+    padding: 0;
+  }
+}
