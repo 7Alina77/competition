@@ -3,3 +3,9 @@
   animation-duration: 2.5s;
   animation-name: shows;
 }
+
+@media (max-width: 320px) {
+  .galery__title {
+    font-size: 18px;
+  }
+}

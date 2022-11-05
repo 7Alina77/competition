@@ -1,7 +1,14 @@
 .galery {
-  font-family: 'Europe_Ext', Arial, sans-serif;
+  font-family: Arial, sans-serif;
   max-width: 1280px;
   display: grid;
   grid-template: repeat(3, calc(100% / 3)) / repeat(2, 50%);
   margin: 100px auto;
+}
+
+@media (max-width: 629px) {
+  .galery{
+    grid-template: repeat(6, calc(100% / 6)) / 100%;
+    margin: 60px auto;
+  }
 }
