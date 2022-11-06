@@ -3,6 +3,17 @@
   width: 50%;
   max-width: 380px;
   max-height: 380px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.travel__image:hover {
+  -webkit-filter: none;
+  filter: none;
+}
+
+.travel__image:active {
+    animation: go 2s linear 3s 1 forwards;
 }
 
 @media screen and (max-width: 831px) {

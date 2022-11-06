@@ -29,3 +29,6 @@
 @import url(../blocks/galery/__text/galery__text.css);
 @import url(../blocks/move/move.css);
 @import url(../blocks/shows/shows.css);
+@import url(../blocks/animation/animation.css);
+@import url(../blocks/animation/__img/animation__img.css);
+@import url(../blocks/go/go.css);
