@@ -1,16 +1,16 @@
 @media screen and (min-width: 630px) {
    @keyframes go {
       0% {
-         transform: translate(80vw, -30vh)
+         transform: translate(80vw, -10vh)
       }
       25% {
-         transform: translate(40vw, -55vh);
+         transform: translate(40vw, -25vh);
       }
       75% {
-         transform: translate(15vw, -54vh);
+         transform: translate(25vw, -25vh);
       }
       100% {
-         transform: translate(12vw, -38vh);
+         transform: translate(12vw, -5vh);
       }
    }
 }

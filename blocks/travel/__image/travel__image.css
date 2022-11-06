@@ -5,6 +5,7 @@
   max-height: 380px;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
+  z-index: 2;
 }
 
 .travel__image:hover {
@@ -13,7 +14,7 @@
 }
 
 .travel__image:active {
-    animation: go 2s linear 3s 1 forwards;
+  animation: go 2s linear 3s 1 forwards;
 }
 
 @media screen and (max-width: 831px) {
