@@ -10,7 +10,7 @@
          transform: translate(15vw, -54vh);
       }
       100% {
-         transform: translate(12vw, -38vh);
+         transform: translate(20vw, -38vh);
       }
    }
 }
